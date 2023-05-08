@@ -34,10 +34,20 @@
 						<div class="inner">
 							<h1 class="major">Pixel Fishing</h1>
 							<span class="image fit"><img src="images/pf01.png" alt="" /></span>
-							<!--<span class="image right"><img src="images/aitv1.gif" alt="" /></span>-->
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<span class="image left"><img src="images/aitv2.gif" alt="" /></span>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							<h3>Project goal:</h3>
+							<p>I love when games have fishing minigames, so I set out to make a standalone fishing minigame. I also wanted to build something that could be played in a web browser, with simple controls that non-gamers could pick up quickly.</p>
+							<span class="image left"><img src="images/pf03.png" alt="" /></span>
+							<h3>Process:</h3>
+							<p>
+								I tried a couple design prototypes, including an attempt at a 2D first person view, before settling on a design that could be accomplished without creating a bunch of custom assets. I selected some sprites from three different
+								asset packs, built a small scene with Unity's tilemap tools, then animated the fish and coded some simple pathing patterns. I used a sprite mask for the preview circle mechanic, and built a simple menu to keep track of the fish
+								the player has caught. After adding some royalty-free music and sound effects, I finished it with a post-processing pass to make it look a little more interesting.
+							</p>
+							<h3>Retrospective</h3>
+							<p>
+								At the time, I was trying to become more adept at leveraging the State pattern, so all of the game management is done with one big state machine. I made a couple mistakes with how I was handling individual states, which made the debugging process
+								painful at times. Using post-processing improved the look, but doesn't run particularly well in a WebGL build. Overall, it was a great learning experience, and I think resulted in a pleasant user experience.
+							</p>
 						</div>
 					</section>
 
