@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Adam Frederick | Portfolio | Adrift in the Void</title>
+		<title>Adam Frederick | Portfolio | Dice Breaker</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -15,7 +15,7 @@
 	<body class="is-preload">
 
 		<!-- Header -->
-			<!--<header id="header">
+			<header id="header">
 				<a href="index.html" class="title">Hyperspace</a>
 				<nav>
 					<ul>
@@ -24,7 +24,7 @@
 						<li><a href="elements.html">Elements</a></li>
 					</ul>
 				</nav>
-			</header>-->
+			</header>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -32,20 +32,22 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">Adrift in the Void</h1>
-							<span class="image fit"><img src="images/aitv1.png" alt="" /></span>
-							<span class="image right"><img src="images/aitv1.gif" alt="" /></span>
+							<h1 class="major">Dice Breaker</h1>
+							<span class="image fit"><img src="images/db01.gif" alt="" /></span>
 							<h3>Project goal:</h3>
-							<p>I wanted a narrowly scoped project in the style of a "walking simulator" where I could produce all of the assets myself.</p>
-							<span class="image left"><img src="images/aitv2.gif" alt="" /></span>
+							<p>In Summer 2021, the Youtube channel <i>Game Maker's Toolkit</i> ran a game jam with the theme of "Roll of the Dice." The jam was limited to 48 hours, and I participated as a solo developer.</p>
+							<span class="image left"><img src="images/pf03.png" alt="" /></span>
 							<h3>Process:</h3>
 							<p>
-								I made the setting "deep space" to minimize the need for assets, and wrote a minimal story told through IMGUI Canvas elements where a mysterious alien intelligence directs the player character to collect orbs.
-								Next, I coded two separate player controllers: one for standard first person movement, and another with pitch and yaw for the outer space movement.
-								Finally, I built the end structure directly in Unity using Probuilder, and created the special effects using VFX Graph and particle systems.
+								I tried a couple design prototypes, including an attempt at a 2D first person view, before settling on a design that could be accomplished without creating a bunch of custom assets. I selected some sprites from three different
+								asset packs, built a small scene with Unity's tilemap tools, then animated the fish and coded some simple pathing patterns. I used a sprite mask for the preview circle mechanic, and built a simple menu to keep track of the fish
+								the player has caught. After adding some royalty-free music and sound effects, I finished it with a post-processing pass to make it look a little more interesting.
 							</p>
 							<h3>Retrospective</h3>
-							<p>The entire process was pretty straightforward, and a good opportunity to get more experience with modeling. If I were to redo this project, I would have used some tweening to make the UI transitions more subtle. The code is not very complicated or well-written, but workable for the level of complexity I needed.</p>
+							<p>
+								At the time, I was trying to become more adept at leveraging the State pattern, so all of the game management is done with one big state machine. I made a couple mistakes with how I was handling individual states, which made the debugging process
+								painful at times. Using post-processing improved the look, but doesn't run particularly well in a WebGL build. Overall, it was a great learning experience, and I think resulted in a pleasant user experience.
+							</p>
 						</div>
 					</section>
 
